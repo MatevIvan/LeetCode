@@ -1,3 +1,5 @@
+# This code is exremely inefficient
+# I need to use binary search
 class Solution(object):
     def mySqrt(self, x):
         i = 0
