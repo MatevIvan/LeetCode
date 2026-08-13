@@ -1,6 +1,5 @@
 package meddiff
 
-
 func MaxSubarrayLength(nums []int, k int) int {
 	usedNumbers := make(map[int]int)
 	lowerIndex := 0
