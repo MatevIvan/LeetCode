@@ -61,3 +61,36 @@ func TestLengthOfLargestSubarrayWithKFrequency(t *testing.T) {
 		})
 	}
 }
+
+func TestIntegerBreak(t *testing.T) {
+	tests := []struct {
+		testID int
+		n      int
+		ans    int
+	}{
+		{
+			testID: 1,
+			n:      2,
+			ans:    1,
+		},
+		{
+			testID: 2,
+			n:      10,
+			ans:    36,
+		},
+		{
+			testID: 3,
+			n:      6,
+			ans:    9,
+		},
+	}
+
+	for _, tc := range tests {
+		t.Run(strconv.Itoa(tc.testID), func(t *testing.T) {
+			testAns := meddiff.IntergerBreak(tc.n)
+			if testAns != tc.ans {
+				t.Errorf("\nTestID: %v failed. Expected %v. Got %v.", tc.testID, tc.ans, testAns)
+			}
+		})
+	}
+}
