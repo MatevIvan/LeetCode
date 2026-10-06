@@ -11,14 +11,15 @@ class Solution(object):
         while s[i] != " " and i >= 0:
             # increase k: the length of the word
             k += 1
-            # decrease i: working through the string backwards 
+            # decrease i: working through the string backwards
             i -= 1
         # return k
         return k
 
+
 # test the code
 solutionInst = Solution()
-print(solutionInst.lengthOfLastWord("   fly me   to   the moon  ")) # output: 4
-print(solutionInst.lengthOfLastWord("luffy is still joyboy")) # output: 6
-print(solutionInst.lengthOfLastWord("Hello World")) # output: 5
-print(solutionInst.lengthOfLastWord("a")) # output: 1
+print(solutionInst.lengthOfLastWord("   fly me   to   the moon  "))  # output: 4
+print(solutionInst.lengthOfLastWord("luffy is still joyboy"))  # output: 6
+print(solutionInst.lengthOfLastWord("Hello World"))  # output: 5
+print(solutionInst.lengthOfLastWord("a"))  # output: 1

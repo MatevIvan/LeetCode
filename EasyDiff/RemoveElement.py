@@ -10,10 +10,9 @@ class Solution(object):
                 i += 1
         return k
 
+
 solutionInst = Solution()
 # print(solutionInst.removeElement([3,2,2,3],3))
-nums = [0,1,2,2,3,0,4,2]
-print(solutionInst.removeElement(nums,2))
+nums = [0, 1, 2, 2, 3, 0, 4, 2]
+print(solutionInst.removeElement(nums, 2))
 print(nums)
-
-

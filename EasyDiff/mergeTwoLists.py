@@ -1,8 +1,10 @@
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
         """
@@ -14,10 +16,10 @@ class Solution(object):
         temp = ListNode()
         # set the current node to the temp list
         current = temp
-        
+
         # while both nodes are not empty
         while list1 and list2:
-            # if the value in list1 is less than or equal to the value in list2 
+            # if the value in list1 is less than or equal to the value in list2
             if list1.val <= list2.val:
                 # set the next node to the remainder of list1
                 current.next = list1
@@ -41,6 +43,6 @@ class Solution(object):
         elif list2:
             # set the remainder of list2 as the next node
             current.next = list2
-        
+
         # return temp.next because the first item was a filler node
         return temp.next

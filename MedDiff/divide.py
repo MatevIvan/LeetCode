@@ -5,7 +5,7 @@ class Solution(object):
         :type divisor: int
         :rtype: int
         """
-        # This feels like a brute force approach and is therefore very inefficient 
+        # This feels like a brute force approach and is therefore very inefficient
         # (esspecially when the dividend is large and the divisor is small)
         sum = 0
         ans = -1
@@ -27,9 +27,10 @@ class Solution(object):
         # Return the sign change * ans
         return isNegative * ans
 
+
 # test the code
 solutionInst = Solution()
-print(solutionInst.divide(10,2)) # 3
-print(solutionInst.divide(7,-3)) # -2
-print(solutionInst.divide(0,1)) # 0
-print(solutionInst.divide(4,1)) # 4
+print(solutionInst.divide(10, 2))  # 3
+print(solutionInst.divide(7, -3))  # -2
+print(solutionInst.divide(0, 1))  # 0
+print(solutionInst.divide(4, 1))  # 4

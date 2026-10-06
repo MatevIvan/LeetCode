@@ -5,10 +5,10 @@ class Solution(object):
         :rtype: bool
         """
         # j is the backwards pointer
-        j = len(s)-1
+        j = len(s) - 1
         # i is the forwards pointer
         i = 0
-        
+
         # i should always be less than j other wise we are overlapping our search
         while i < j:
             # find the next letter or number for the i pointer
@@ -29,7 +29,8 @@ class Solution(object):
         # return true is we make it out of the loop
         return True
 
+
 # test the code
 solutionInst = Solution()
-print(solutionInst.isPalindrome("A man, a plan, a canal: Panama")) #True
-print(solutionInst.isPalindrome("  y yy ")) #True
+print(solutionInst.isPalindrome("A man, a plan, a canal: Panama"))  # True
+print(solutionInst.isPalindrome("  y yy "))  # True

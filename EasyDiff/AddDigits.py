@@ -20,14 +20,15 @@ class Solution(object):
             else:
                 longNum = False
         return tempNum
-    
+
         # This code was a solution on leet code.
         # How did they figure out that we're just looking for (num % 9)
         # if num == 0 : return 0
         # if num % 9 == 0 : return 9
-        # else : return (num % 9)  
+        # else : return (num % 9)
+
 
 solutionInst = Solution()
-print(solutionInst.addDigits(131)) # 5
-print(solutionInst.addDigits(38)) # 2
-print(solutionInst.addDigits(0)) # 0
+print(solutionInst.addDigits(131))  # 5
+print(solutionInst.addDigits(38))  # 2
+print(solutionInst.addDigits(0))  # 0

@@ -6,7 +6,7 @@ class Solution(object):
         j = 0
         # i needs to stay in the bounds of the haystack size - the needle size
         for i in range(len(haystack) - len(needle) + 1):
-            # first needle letter and haystack letter are the same -> start the check 
+            # first needle letter and haystack letter are the same -> start the check
             if haystack[i] == needle[j]:
                 # k will go through and test the potential section of the haystack
                 k = i
@@ -27,8 +27,9 @@ class Solution(object):
                         k = i + len(needle) + 1
         # return -1 if no matching set was found
         return -1
-        
+
+
 # test the code
 solutionInst = Solution()
-print(solutionInst.strStr("mississippi","issip")) # output: 4
-print(solutionInst.strStr("a","a")) # output: 0
+print(solutionInst.strStr("mississippi", "issip"))  # output: 4
+print(solutionInst.strStr("a", "a"))  # output: 0

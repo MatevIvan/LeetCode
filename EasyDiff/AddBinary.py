@@ -21,13 +21,14 @@ class Solution(object):
                 j -= 1
 
             # total % 2 will only return a 1 or a 0
-            result = str(total%2) + result
+            result = str(total % 2) + result
             # if the total is a 2 or 3, the carry will be 1
-            carry = int(total/2)
+            carry = int(total / 2)
 
         return result
 
+
 # Test the code
 solutionInst = Solution()
-print(solutionInst.addBinary("11","1")) # 100
-print(solutionInst.addBinary("1010","1011")) # 10101
+print(solutionInst.addBinary("11", "1"))  # 100
+print(solutionInst.addBinary("1010", "1011"))  # 10101

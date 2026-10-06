@@ -6,10 +6,10 @@ class Solution(object):
         tempPrefix = ""
         # j will be increased to find the longest prefix
         j = 1
-        
+
         # make sure the prefix is never larger than the first word
         while j <= len(strs[0]):
-            # set the temporary prefix to the first letter of the first word. 
+            # set the temporary prefix to the first letter of the first word.
             # Each time we go through the while loop, the temporary prefix will increase by one letter
             tempPrefix = strs[0][0:j]
             # itterate through every word in the given string list
@@ -24,10 +24,11 @@ class Solution(object):
         # if the entire first word is found in the remaining words, this code will return the entire first word
         return longestPrefix
 
+
 # Test the code
 solution_inst = Solution()
-print(solution_inst.longestCommonPrefix(["flower","flow","flight"])) # fl
-print(solution_inst.longestCommonPrefix(["dog","racecar","car"])) # ""
-print(solution_inst.longestCommonPrefix(["a"])) # a
-print(solution_inst.longestCommonPrefix([""])) # ""
-print(solution_inst.longestCommonPrefix(["words"])) # "words"
+print(solution_inst.longestCommonPrefix(["flower", "flow", "flight"]))  # fl
+print(solution_inst.longestCommonPrefix(["dog", "racecar", "car"]))  # ""
+print(solution_inst.longestCommonPrefix(["a"]))  # a
+print(solution_inst.longestCommonPrefix([""]))  # ""
+print(solution_inst.longestCommonPrefix(["words"]))  # "words"

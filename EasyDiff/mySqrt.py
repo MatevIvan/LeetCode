@@ -8,7 +8,7 @@ class Solution(object):
                 return i
             if i * i > x:
                 return i - 1
-            i+=1
+            i += 1
 
 
 solutionInst = Solution()
