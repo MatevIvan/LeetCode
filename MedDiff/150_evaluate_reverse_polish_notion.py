@@ -50,6 +50,7 @@ def evalRRN(tokens: list[str]) -> int:
     return answer
 
 
+# chatgpt 5.6 terra medium solution
 def AIevalRRN(tokens: list[str]) -> int:
     stack: list[int] = []
 
@@ -93,11 +94,11 @@ def doOpperation(num1: int, num2: int, opperator: str) -> int:
 
 def runTests():
     test_cases = [
-        # TestCase(1, ["2", "1", "+", "3", "*"], 9),
-        # TestCase(2, ["4", "13", "5", "/", "+"], 6),
-        # TestCase(
-        #     3, ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"], 22
-        # ),
+        TestCase(1, ["2", "1", "+", "3", "*"], 9),
+        TestCase(2, ["4", "13", "5", "/", "+"], 6),
+        TestCase(
+            3, ["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"], 22
+        ),
         TestCase(4, ["18"], 18),
     ]
 
